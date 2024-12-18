@@ -1,0 +1,36 @@
+@import "../../../styles/variables";
+.container{
+    display: flex;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    left: 0;
+    background: $backgroundColor;
+    z-index: 500;
+    box-sizing: border-box;
+    padding: 0 24px;
+    // font-size: 16px;
+}
+.hidden{
+    display: none;
+}
+.ratingSelect{
+    display: flex;
+    width: 111px;
+    height: 36px;
+    border-radius: 100px;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    transition: .3s all linear;
+    &Active{
+        background: $primaryCyan;
+        color: $blueColor;
+    }
+    input{
+        width: 111px;
+        height: 36px;
+        position: absolute;
+        opacity: 0;
+    }
+}

@@ -1,0 +1,140 @@
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 0 200px;
+  height: 100%;
+
+  .pageHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // padding: 0 110px;
+
+    h2 {
+      font-weight: 600;
+      // font-size: 32px;
+      line-height: 48px;
+      color: #d9e2ff;
+    }
+
+    a {
+      height: 50px;
+      padding: 10px 20px;
+    }
+
+    span {
+      font-weight: 600;
+      // font-size: 32px;
+      line-height: 48px;
+      color: #a3adaf;
+    }
+  }
+}
+
+.createDeal {
+  & > button {
+    color: #002d6d;
+    font-weight: 600;
+    padding: 10px 24px 10px 16px;
+  }
+}
+
+.titleTable {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  & > h2 {
+    color: #d9e2ff;
+    font-weight: 500;
+  }
+
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+.filter {
+  &__block {
+    overflow: hidden;
+    background: transparent;
+
+    & > select {
+      background-color: transparent;
+      border: none;
+      color: #d9e2ff;
+      font-size: 1.2rem;
+      font-weight: 500;
+      outline: none;
+    }
+  }
+}
+
+.dealTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.dealTable tr th {
+  color: #8f9099;
+}
+
+.dealTable th,
+.dealTable td {
+  text-align: left;
+  padding: 1rem 0;
+}
+
+.dealTable th {
+  width: 21% !important;
+  color: #c7c6ca;
+}
+
+.dealTable th:nth-child(5) {
+  padding: 5px;
+}
+
+@media (max-width: 575px) {
+  .dealTable th,
+  .dealTable td {
+    font-size: 9px !important;
+    text-align: center;
+  }
+  .dealTable th,
+  .dealTable td {
+    padding: .3rem;
+  }
+  //.dealTable th {
+  //  font-size: 9px !important;
+  //}
+  .titleTable {
+    display: none;
+  }
+  .createDeal {
+    z-index: 999;
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3),
+    0 4px 8px 3px rgba(0, 0, 0, 0.15);
+
+    & > button {
+      border-radius: 16px;
+      width: 180px;
+      height: 56px;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .container {
+    padding: 0 0.3rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .container {
+    padding: 0 0.3rem;
+  }
+}

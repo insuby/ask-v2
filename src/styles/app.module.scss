@@ -1,0 +1,33 @@
+@import 'variables';
+
+.containerNoHeight {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  background: $backgroundColor;
+  overflow: hidden;
+
+  .content {
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+  }
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background: $backgroundColor;
+  overflow-y: auto;
+
+  .content {
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+  }
+}

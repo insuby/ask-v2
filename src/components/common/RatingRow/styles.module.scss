@@ -1,0 +1,51 @@
+@import '../../../styles/variables';
+
+.row {
+  cursor: pointer;
+  width: 100%;
+  td {
+    position: relative;
+    width: 100%;
+    overflow-wrap: break-word;
+    text-align: left;
+    &:nth-of-type(2) {
+      padding: 0;
+      width: 100%;
+    }
+    &:nth-of-type(3) {
+      text-align: start;
+      padding: 0 9rem 0 2rem ;
+      width: 20%;
+    }
+    &:nth-of-type(4) {
+      padding: 0 10rem 0 3rem ;
+      width: 20%;
+    }
+    &:nth-of-type(5) {
+      padding: 0 14rem 0 6rem ;
+      width: 20%;
+    }
+    &:first-of-type {
+      padding: 0 0 0 15px;
+      width: 20%;
+    }
+  }
+}
+@media (max-width: 575px) {
+  .row {
+    td {
+      &:nth-of-type(2) {
+        padding: 0 0 0 20px;
+      }
+      &:nth-of-type(3) {
+        padding: 0 3rem;
+      }
+      &:first-of-type {
+        padding: 0 0 0 5px;
+      }
+      &:last-of-type {
+        padding: 0 1rem 0 3rem;
+      }
+    }
+  }
+}

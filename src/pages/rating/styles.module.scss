@@ -1,0 +1,189 @@
+@import '../../styles/variables';
+
+.container {
+  height: 100%;
+  overflow: hidden;
+  padding: 0 200px
+}
+
+.ratingSelect {
+  display: flex;
+  width: 100px;
+  height: 36px;
+  margin: 0 10px;
+  border-radius: 100px;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  transition: 0.3s all linear;
+
+  &Active {
+    background: $backgroundColorDark;
+    color: $primaryCyan;
+  }
+
+  input {
+    width: 111px;
+    height: 36px;
+    position: absolute;
+    opacity: 0;
+  }
+}
+
+.selectContainer {
+  display: flex;
+  //position: absolute;
+  left: 180px;
+  top: 120px;
+}
+
+.ratingTable {
+  width: 100%;
+  border-collapse: collapse;
+  color: #d9e2ff;
+}
+
+.ratingTable tr th {
+  color: #8f9099;
+  font-weight: 400;
+}
+
+.ratingTable th,
+.ratingTable td:nth-child(1) {
+  text-align: left;
+  padding: 1rem 1.5rem;
+  width: 20%;
+}
+
+.ratingTable th {
+  color: #c7c6ca;
+  padding: 1rem;
+  width: 20%;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding: 4rem 0;
+  gap: 10px;
+
+  & > button:nth-child(1) {
+    background-color: transparent;
+    color: #44464f;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 143%;
+  }
+
+  & > button:nth-child(4) {
+    color: #002d6d;
+    background-color: $primaryCyan;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 143%;
+  }
+
+  &__previous {
+    & > button {
+      background-color: transparent;
+      color: #44464f;
+      font-weight: bold;
+    }
+  }
+
+  &__next {
+    & > button {
+      background-color: #afc6ff;
+      color: #002d6d;
+      font-weight: bold;
+    }
+  }
+}
+
+.pagesCount {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 100px;
+  padding: 10px 19px;
+  width: 44px;
+  height: 44px;
+  background-color: #292a2d;
+  box-shadow: 0px 4px 11px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+@media (max-width: 575px) {
+  .container {
+    padding: 1rem 0;
+  }
+  .pagination {
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    right: 3%;
+    z-index: 800;
+
+    &__next {
+      & > button {
+        border-radius: 100px;
+        padding: 10px;
+        width: 44px;
+        height: 44px;
+      }
+    }
+
+    &__previous {
+      & > button {
+        border-radius: 100px;
+        padding: 10px;
+        width: 44px;
+        height: 44px;
+        background-color: $primaryCyan;
+      }
+    }
+  }
+  .pagesCount {
+    border: none;
+    border-radius: 100px;
+    padding: 10px 19px;
+    width: 44px;
+    height: 44px;
+    background-color: #292a2d;
+    box-shadow: 0px 4px 11px 4px rgba(0, 0, 0, 0.1);
+  }
+  .ratingSelect {
+    width: 80px;
+    color: #bfc6dc;
+
+    &Active {
+      background-color: $primaryCyan;
+      padding: 8px 21px;
+      width: 111px;
+      height: 36px;
+      color: #002d6d;
+    }
+  }
+  .selectContainer {
+    top: 85px;
+    left: 0;
+  }
+  .ratingTable th,
+  .ratingTable td {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding-left: 0;
+    padding-right: 1.2rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .container {
+    padding: 0 0.3rem;
+  }
+}

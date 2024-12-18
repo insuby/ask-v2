@@ -1,0 +1,61 @@
+$desktopMaxWidth: 1920px;
+$maximumBorderRadiusButton: 2rem;
+$backgroundColor: #1b1b1f;
+$backgroundColorDark: #292A2D;
+$backgroundColorModal: #2b292d;
+$darkColorText: #1c1b1e;
+$mainTextColor: #e6e1e6;
+$lightGrayColor: #cac3dc;
+$midGrayColor: #a3adaf;
+$darkGrayColor: #747778;
+$mediumGrayColor: #C5C6D0;
+$darkTableColor: #1f1b16;
+$yellowColor: #ffa600;
+$yellowLightColor: #EEE273;
+$greenColor: #27a972;
+$greenLightColor: #82ED80;
+$redColor: #ff5b50;
+$redLightColor: #F17878;
+$violetColor: #865bfd;
+$blueColor: #007aff;
+$blueLightColor: #6885ED;
+$lightBlueColor: #D9E2FF;
+$secondaryBlueColor: #BFC6DC;
+$tunelDarkColor: #8F9099;
+
+
+$white: #ffffff;
+$errorColor: #ff5b50;
+$errorColorModal: #ffb4ab;
+$placeholderColor: #818384;
+
+$primaryTonal: #2b292d;
+$primaryTonalHover: rgba(134, 91, 253, 0.1);
+$primaryTonalActive: rgba(134, 91, 253, 0.16);
+
+$primaryCyan: #afc6ff;
+$primaryCyanHover: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.1)
+  ),
+  $primaryCyan;
+$primaryCyanActive: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0.16),
+    rgba(255, 255, 255, 0.16)
+  ),
+  $primaryCyan;
+
+$grayTertiaryHover: linear-gradient(
+    0deg,
+    rgba(46, 49, 50, 0.1),
+    rgba(46, 49, 50, 0.1)
+  ),
+  $lightGrayColor;
+$grayTertiaryActive: linear-gradient(
+    0deg,
+    rgba(46, 49, 50, 0.16),
+    rgba(46, 49, 50, 0.16)
+  ),
+  $lightGrayColor;

@@ -1,0 +1,71 @@
+{
+  "name": "deals",
+  "private": true,
+  "engines": {
+    "node": "v18.x"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/css": "^11.11.2",
+    "@tronweb3/tronwallet-abstract-adapter": "^1.1.6",
+    "@tronweb3/tronwallet-adapter-react-hooks": "^1.1.7",
+    "@tronweb3/tronwallet-adapter-tronlink": "^1.1.9",
+    "@tronweb3/tronwallet-adapter-walletconnect": "^1.0.6",
+    "bignumber.js": "^9.1.1",
+    "classnames": "^2.3.2",
+    "date-fns": "^2.30.0",
+    "ethers": "^6.3.0",
+    "lodash": "^4.17.21",
+    "next": "^13.3.0",
+    "react": "^18.2.0",
+    "react-datepicker": "^6.2.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.43.9",
+    "react-infinite-scroll-component": "^6.1.0",
+    "tronweb": "6.0.0-beta.3",
+    "zustand": "^4.3.7"
+  },
+  "devDependencies": {
+    "@daochild/tronweb-typescript": "^1.1.2",
+    "@next/eslint-plugin-next": "^14.0.4",
+    "@trivago/prettier-plugin-sort-imports": "^4.3.0",
+    "@types/element-closest": "^3.0.0",
+    "@types/lodash": "^4.14.194",
+    "@types/node": "^18.15.11",
+    "@types/react": "^18.0.37",
+    "@types/react-datepicker": "^4.19.6",
+    "@types/react-dom": "^18.2.3",
+    "@typescript-eslint/eslint-plugin": "^5.59.0",
+    "@typescript-eslint/parser": "^5.59.0",
+    "eslint": "^8.57.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-next": "^13.3.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-unused-imports": "^2.0.0",
+    "prettier": "^2.8.7",
+    "sass": "^1.62.0",
+    "typescript": "^5.0.4"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "packageManager": "pnpm@8.15.1+sha1.8adba2d20330c02d3856e18c4eb3819d1d3ca6aa"
+}

@@ -1,0 +1,46 @@
+@import '../../../styles/variables';
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1.5rem;
+  width: 400px;
+  background: #292a2d;
+  // box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12), 0 16px 32px rgba(0, 0, 0, 0.12), 0 1px 48px rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+
+  .title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+    color: $lightBlueColor;
+  }
+
+  .buttonsBlock {
+    margin-top: 20px;
+    padding-top: 8px;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 16px;
+
+    button {
+      font-weight: 700;
+      line-height: 24px;
+      justify-content: center;
+      border: none;
+      flex-direction: row;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+      width: 30%;
+    }
+    button:nth-child(1) {
+      background-color: #AFC6FF;
+      color: #002D6D;
+    }
+    button:nth-child(2) {
+      background-color: transparent;
+      color: #BFC6DC;
+    }
+  }
+}

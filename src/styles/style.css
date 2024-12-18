@@ -1,0 +1,87 @@
+/*.react-datepicker {*/
+/*background-color: #1f1f23 !important;*/
+/*color:#a3adaf !important;*/
+/*border: 1px solid #2b292d !important;*/
+/*}*/
+/*.react-datepicker__month-container{*/
+/*background-color: #1f1f23 !important;*/
+/*color:#e6e1e6 !important;*/
+
+/*}*/
+/*.react-datepicker__header{*/
+/*background-color: #1f1f23 !important;*/
+/*color:#e6e1e6 !important;*/
+/*border-bottom: 1px solid #2b292d !important;*/
+/*}*/
+/*.react-datepicker__time-list{*/
+/*background-color: #1f1f23 !important;*/
+/*color:#e6e1e6 !important;*/
+
+/*}*/
+/*.react-datepicker__day{*/
+/*color:#e6e1e6 !important;*/
+
+/*}*/
+/*.react-datepicker__time-container{*/
+/*    border-left: 1px solid #2b292d !important;*/
+
+/*}*/
+/*.react-datepicker__current-month{*/
+/*color:#e6e1e6 !important;*/
+
+/*}*/
+/*.react-datepicker__day-name{*/
+/*color:#e6e1e6 !important;*/
+
+/*}*/
+/*.react-datepicker-time__header{*/
+/*color:#e6e1e6 !important;*/
+
+/*}*/
+/*.react-datepicker__day--selected{*/
+/*background: #2b292d !important;*/
+/*}*/
+/*.react-datepicker__day--keyboard-selected{*/
+/*background: #2b292d !important;*/
+
+/*}*/
+/*.react-datepicker__time-list-item--selected{*/
+/*background: #2b292d !important;*/
+
+/*}*/
+/*@media (max-width:575px) {*/
+/*    .react-datepicker-wrapper{*/
+/*        width: 100% !important;*/
+/*    }*/
+/*}*/
+/*input[type="number"]::-webkit-inner-spin-button, */
+/*input[type="number"]::-webkit-outer-spin-button { */
+/*  -webkit-appearance: none; */
+/*  margin: 0; */
+/*}*/
+/*input[type="number"] {*/
+/*    -moz-appearance: textfield;*/
+/*  }*/
+/*  input[type="time"]{*/
+/*    position: relative;*/
+/*  }*/
+/*input[type="time"]::-webkit-calendar-picker-indicator {*/
+/*    position: absolute;*/
+/*    opacity: 0;*/
+/*    width: 100%;*/
+/*}*/
+/*@media (max-width:575px) {*/
+/*  !*#wallet{*!*/
+/*  !*  padding-right: 210px;*!*/
+/*  !*  padding-left: 25px;*!*/
+/*  !*}*!*/
+/*  !*#successful{*!*/
+/*  !*  padding-left: 25px;*!*/
+/*  !*}*!*/
+/*  !*#id{*!*/
+/*  !*  padding-left: 40px;*!*/
+/*  !*}*!*/
+/*  !*#role{*!*/
+/*  !*  padding-left: 100px;*!*/
+/*  !*}*!*/
+/*}*/

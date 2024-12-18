@@ -1,0 +1,37 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
+.buttonLink {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 32px;
+  gap: 8px;
+  border: none;
+  height: 56px;
+  background: $primaryCyan;
+  border-radius: 32px;
+  color: #002d6d;
+  cursor: pointer;
+  z-index: 555;
+  @include large-font;
+
+  &:hover {
+    background: $primaryCyanHover;
+  }
+
+  &:active {
+    background: $primaryCyanActive;
+  }
+}
+
+@media (max-width: 575px) {
+  .buttonLink{
+   position: absolute;
+   bottom: 30px;
+   right: 30px;
+   border-radius: 12px;
+  
+  }
+}

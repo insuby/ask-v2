@@ -1,0 +1,188 @@
+.modal {
+  background-color: #292a2d;
+  position: absolute;
+  padding: 18px 16px;
+  top: 85px;
+  right: 450px;
+  border-radius: 15px;
+  display: flex;
+  gap: 20px;
+  box-shadow: 0px 2px 6px 2px rgba(0, 0, 0, 0.15),
+    0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+  z-index: 602;
+  animation: slideDown 0.3s ease-in-out forwards;
+  &__name {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  &__etherium {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 12px;
+    gap: 12px;
+    cursor: pointer;
+    & > div {
+      display: flex;
+      align-items: center;
+      span {
+        color: #d9e2ff;
+        // font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0.15px;
+      }
+    }
+    &:hover {
+      background-color: #1f1f23;
+      transition: background-color ease-in-out 0.2s;
+    }
+  }
+  &__arbitrum {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 12px;
+    gap: 12px;
+    cursor: pointer;
+    & > div {
+      display: flex;
+      align-items: center;
+      span {
+        color: #d9e2ff;
+        // font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0.15px;
+      }
+    }
+    &:hover {
+      background-color: #1f1f23;
+      transition: background-color ease-in-out 0.2s;
+    }
+  }
+  &__base {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 12px;
+    gap: 12px;
+    cursor: pointer;
+    & > div {
+      display: flex;
+      align-items: center;
+      span {
+        color: #d9e2ff;
+        // font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0.15px;
+      }
+    }
+    &:hover {
+      background-color: #1f1f23;
+      transition: background-color ease-in-out 0.2s;
+    }
+  }
+  &__polygon {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 12px;
+    gap: 12px;
+    cursor: pointer;
+    & > div {
+      display: flex;
+      align-items: center;
+      span {
+        color: #d9e2ff;
+        // font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0.15px;
+      }
+    }
+    &:hover {
+      background-color: #1f1f23;
+      transition: background-color ease-in-out 0.2s;
+    }
+  }
+}
+.divider {
+  background-color: #44464f;
+  width: 1px;
+  height: auto;
+}
+.coins {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  &__USDT {
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+    padding: 5px;
+    button {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      color: #d9e2ff;
+      // font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 24px;
+      letter-spacing: 0.15px;
+    }
+    &:hover{
+      background-color: #1f1f23;
+      transition: background-color ease-in-out 0.2s;
+    }
+  }
+  &__ETH {
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+    padding: 5px;
+    button {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      color: #d9e2ff;
+      // font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 24px;
+      letter-spacing: 0.15px;
+    }
+    &:hover{
+      background-color: #1f1f23;
+      transition: background-color ease-in-out 0.2s;
+    }
+  }
+}
+.coinsBetween {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  80% {
+    transform: translateY(10%);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+}

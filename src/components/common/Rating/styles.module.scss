@@ -1,0 +1,19 @@
+@import '../../../styles/mixins';
+@import '../../../styles/variables';
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #bfc6dc;
+  @include large-font;
+  &:focus {
+    background: $primaryTonal;
+    border-radius: $maximumBorderRadiusButton;
+    padding: 10px 24px 10px 16px;
+    color: $primaryCyan;
+    & > svg > path {
+      fill: $primaryCyan;
+    }
+  }
+}

@@ -1,0 +1,52 @@
+@import '../../../styles/variables';
+
+.rightSide {
+  display: flex;
+  align-items: center;
+  &__dropdown {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: $maximumBorderRadiusButton;
+    background-color: #1f1f23;
+    padding: 10px;
+    &--icon {
+      display: flex;
+      align-items: center;
+      position: relative;
+      top: 2px;
+      // padding-right: 15px;
+      cursor: pointer;
+    }
+    &--eth {
+      position: absolute;
+      z-index: 1;
+      left: 15px;
+    }
+    &--currency {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      padding-right: 20px;
+      button {
+        padding: 0;
+        background-color: transparent;
+        span {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .rightSide {
+    &__dropdown {
+      background-color: transparent;
+      &--currency {
+        svg {
+          display: none;
+        }
+      }
+    }
+  }
+}

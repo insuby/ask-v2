@@ -1,0 +1,58 @@
+@import '../../../styles/variables';
+
+.status {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 6px;
+  font-weight: 600;
+  line-height: 20px;
+  white-space: nowrap;
+}
+
+.buyerWaiting {
+  color: $blueLightColor;
+}
+
+.takerWaiting {
+  color: $blueLightColor;
+}
+
+.arbiterWaiting {
+  color: $lightBlueColor;
+}
+
+.inProgress {
+  color: $violetColor;
+}
+
+.inReview {
+  color: $yellowColor;
+}
+
+.inDispute {
+  color: $yellowLightColor;
+}
+
+.done {
+  color: $greenLightColor;
+}
+
+.resolved {
+  color: $mediumGrayColor;
+}
+
+.canceled {
+  color: $redLightColor;
+}
+
+@media (max-width: 575px) {
+  .status {
+    display: flex;
+    justify-content: center;
+
+    span {
+      display: none;
+    }
+  }
+}

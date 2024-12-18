@@ -1,0 +1,939 @@
+@import 'src/styles/variables';
+
+.container {
+  input[type='number']::-webkit-inner-spin-button,
+  input[type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  input[type='number'] {
+    -moz-appearance: textfield;
+  }
+
+  :global {
+    .react-datepicker-wrapper {
+      width: 70%;
+
+      .react-datepicker__input-container {
+        input {
+          text-align: center;
+          width: 100%;
+          background-color: #1f1f23;
+          padding: 10px 20px;
+          border: none;
+          border-radius: 50px;
+          color: #d9e2ff;
+          outline: none;
+        }
+      }
+    }
+  }
+
+  padding: 0 200px;
+
+  .title {
+    // font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px;
+    color: #d9e2ff;
+  }
+
+  .inputsBlock {
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+
+    .rowMakerSection {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      background-color: #292a2d;
+      padding: 18px 20px;
+      border-radius: 15px;
+
+      & > button {
+        width: max-content;
+        font-weight: 600;
+
+        &:hover {
+          background-color: #343438;
+          color: #afc6ff;
+          transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+
+          & > svg,
+          path {
+            fill: #afc6ff;
+          }
+        }
+      }
+
+      span {
+        color: #c7c6ca;
+        // font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.15px;
+      }
+
+      &__mainInput {
+        position: relative;
+
+        &--icon {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: absolute;
+          right: 6px;
+          top: 60%;
+          transform: translateY(-50%);
+          background-color: #292a2d;
+          border-radius: 50%;
+          width: 30px;
+          height: 30px;
+        }
+      }
+
+      &__mainInput,
+      .container input,
+      &__mainInput input {
+        max-width: 100%;
+
+        &::placeholder {
+          font-weight: 500;
+        }
+      }
+    }
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .takerAddressSection {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #292a2d;
+    padding: 18px 20px;
+    border-radius: 15px;
+
+    & > .container input,
+    & input {
+      color: $lightBlueColor;
+      font-weight: 500;
+    }
+
+    &__sellerInput {
+      position: relative;
+
+      &--icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        right: 6px;
+        top: 60%;
+        transform: translateY(-50%);
+        background-color: #292a2d;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+      }
+    }
+
+    span {
+      color: #c7c6ca;
+      // font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0.15px;
+    }
+  }
+
+  .takerInput,
+  .container input,
+  .takerInput input {
+    max-width: 100%;
+    color: $lightBlueColor;
+    font-weight: 500;
+    padding-right: 0;
+
+    &::placeholder {
+      font-weight: 500;
+    }
+  }
+
+  .takerInput {
+    & > div > button {
+      width: max-content;
+      font-weight: 600;
+
+      &:hover {
+        background-color: #343438;
+        color: #afc6ff;
+        transition: background-color 0.2s ease-in-out;
+
+        & > svg,
+        path {
+          fill: #afc6ff;
+        }
+      }
+    }
+  }
+
+  .dynamicBuyersInput {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    width: 100%;
+
+    &__wallet {
+      position: relative;
+      display: flex;
+      max-width: 100%;
+      flex-grow: 1;
+
+      & > button {
+        position: absolute;
+        right: 1%;
+        top: 33%;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+      }
+
+      & > .container input,
+      & input {
+        width: 100%;
+
+        &::placeholder {
+          font-weight: 500;
+        }
+      }
+    }
+
+    &__commission {
+      position: relative;
+      display: flex;
+      align-items: center;
+      max-width: 100%;
+
+      & > button {
+        position: absolute;
+        right: 1%;
+        top: 33%;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+      }
+
+      & > .container input,
+      & input {
+        width: 100%;
+
+        &::placeholder {
+          font-weight: 500;
+        }
+      }
+    }
+
+    &__delete > button {
+      background-color: transparent;
+      cursor: pointer;
+      border: none;
+    }
+  }
+
+  .dynamicTakerInput {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    &__wallet {
+      position: relative;
+      display: flex;
+      max-width: 100%;
+      flex-grow: 1;
+
+      & > button {
+        position: absolute;
+        right: 1%;
+        top: 33%;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+      }
+
+      & > .container input,
+      & input {
+        width: 100%;
+
+        &::placeholder {
+          font-weight: 500;
+        }
+      }
+    }
+
+    &__commission {
+      position: relative;
+      align-items: center;
+      display: flex;
+      max-width: 100%;
+
+      & > button {
+        position: absolute;
+        right: 1%;
+        top: 33%;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+      }
+
+      & > .container input,
+      & input {
+        width: 100%;
+
+        &::placeholder {
+          font-weight: 500;
+        }
+      }
+    }
+
+    &__delete > button {
+      background-color: transparent;
+      cursor: pointer;
+      border: none;
+    }
+  }
+
+  .arbiterRowSection {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #292a2d;
+    padding: 18px 20px;
+    border-radius: 15px;
+
+    .arbiterSection {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding: 10px 0;
+
+      &__groupBtn {
+        display: flex;
+        gap: 20px;
+
+        &--add {
+          & > button {
+            font-weight: 600;
+
+            &:hover {
+              background-color: #343438;
+              color: #afc6ff;
+              transition: background-color 0.2s ease-in-out;
+
+              & > svg,
+              path {
+                fill: #afc6ff;
+              }
+            }
+          }
+        }
+
+        &--choose {
+          & > button {
+            font-weight: 600;
+            background-color: #343438;
+          }
+        }
+      }
+
+      &__groupInput {
+        display: flex;
+        flex-direction: column;
+
+        &--inside {
+          display: flex;
+          gap: 20px;
+
+          & > div {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+          }
+        }
+      }
+    }
+
+    span {
+      color: #c7c6ca;
+      // font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0.15px;
+    }
+
+    & > .container input,
+    & input {
+      padding-right: 40px;
+      color: $lightBlueColor;
+      font-weight: 500;
+    }
+  }
+
+  .dealsAmount {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #292a2d;
+    padding: 18px 20px;
+    width: 100%;
+    border-radius: 15px;
+    height: 20%;
+
+    &__wrapper {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      gap: 10px;
+    }
+
+    &__input {
+      width: 100%;
+    }
+
+    span {
+      color: #c7c6ca;
+      // font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0.15px;
+    }
+
+    & > .container input,
+    & input {
+      color: $lightBlueColor;
+      font-weight: 500;
+    }
+  }
+
+  .addInputWithConditionalArbitrator {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65%;
+
+    svg {
+      display: flex;
+      position: absolute;
+      right: 2%;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: #292a2d;
+      border-radius: 50%;
+      width: 25px;
+      height: 25px;
+    }
+  }
+
+  .condition {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .conditionalDealsButton {
+    padding-top: 1rem;
+
+    & > button {
+      background-color: #afc6ff;
+      width: max-content;
+      font-weight: 600;
+
+      &:hover {
+        background-color: #343438;
+        color: #afc6ff;
+        transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+
+        & > svg,
+        path {
+          fill: #afc6ff;
+        }
+      }
+    }
+  }
+
+  .conditionRowSection {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #292a2d;
+    padding: 18px 20px;
+    width: 100%;
+    border-radius: 15px;
+    height: 20%;
+
+    & > div {
+      align-items: center;
+      gap: 10px;
+    }
+
+    span {
+      color: #c7c6ca;
+      // font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0.15px;
+    }
+  }
+
+  .conditionRowSectionInput {
+    display: flex;
+    align-items: center;
+
+    &__icon {
+      & > button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+      }
+    }
+
+    & > .container textarea,
+    & textarea,
+    textarea::placeholder {
+      color: $lightBlueColor;
+      font-weight: 500;
+    }
+  }
+
+  .dueDate {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+    background-color: #292a2d;
+    padding: 18px 20px;
+    gap: 10px;
+    border-radius: 15px;
+    width: 40%;
+
+    &__container {
+      & > h4 {
+        color: #c7c6ca;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.15px;
+      }
+    }
+
+    &__data {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    &__start {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      & > span {
+        color: #d9e2ff;
+      }
+
+      & > div > input {
+        background-color: #1f1f23;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 50px;
+        color: #d9e2ff;
+      }
+    }
+
+    &__end {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      & > span {
+        color: #d9e2ff;
+      }
+
+      & > div > input {
+        background-color: #1f1f23;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 50px;
+        color: #d9e2ff;
+      }
+    }
+  }
+
+  .sumContainer {
+    margin: 36px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    // width: 50%;
+    width: 100%;
+
+    p {
+      color: $darkGrayColor;
+      font-weight: 400;
+
+      line-height: 20px;
+      padding: 0 1.5rem;
+    }
+
+    .totalSumBlockSecondary {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 1.5rem;
+
+      color: #8f9099;
+
+      h4 {
+        /* Title/Medium */
+        /* Body/Medium */
+        font-family: Montserrat;
+
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px; /* 142.857% */
+        letter-spacing: 0.25px;
+      }
+
+      h5 {
+        /* Title/Medium */
+        /* Body/Medium */
+        font-family: Montserrat;
+
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px; /* 142.857% */
+        letter-spacing: 0.25px;
+      }
+    }
+
+    .totalSumBlock {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 1.5rem;
+
+      h2 {
+        /* Title/Medium */
+        font-family: Montserrat;
+        // font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 24px; /* 150% */
+        letter-spacing: 0.15px;
+        color: $lightBlueColor;
+      }
+
+      h3 {
+        /* Title/Medium */
+        font-family: Montserrat;
+        // font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px; /* 150% */
+        letter-spacing: 0.15px;
+        color: $lightBlueColor;
+        border-bottom: 2px solid $lightBlueColor;
+      }
+
+      &__info {
+        display: flex;
+        align-items: center;
+        padding: 0 1.3rem;
+
+        p {
+          padding: 0 0.5rem;
+        }
+      }
+    }
+  }
+
+  .buttonContainer {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    justify-content: right;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    font-weight: 600;
+  }
+}
+
+.addInputWithConditional {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.addInputWithConditionalCount {
+  width: fit-content;
+}
+
+.deleteButtonInput > button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.addInputWithConditionalIntermedeary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+}
+
+.buyersField {
+  & > button {
+    font-weight: 600;
+
+    &:hover {
+      background-color: #343438;
+      color: #afc6ff;
+      transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+
+      & > svg,
+      path {
+        fill: #afc6ff;
+      }
+    }
+  }
+}
+
+.gurantorsField {
+  & > button {
+    font-weight: 600;
+
+    &:hover {
+      background-color: #343438;
+      color: #afc6ff;
+      transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+
+      & > svg,
+      path {
+        fill: #afc6ff;
+      }
+    }
+  }
+}
+
+.dynamicSellerInput {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  &__wallet {
+    max-width: 100%;
+    flex-grow: 1;
+
+    & > .container input,
+    & input {
+      width: 100%;
+
+      &::placeholder {
+        font-weight: 500;
+      }
+    }
+  }
+
+  &__delete > button {
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+  }
+}
+
+@media (max-width: 999px) {
+  .container {
+    padding: 0;
+    width: 100%;
+
+    .sumContainer {
+      width: 100%;
+    }
+  }
+  .title {
+    text-align: start;
+    padding: 0 30px;
+    font-size: 24px;
+  }
+  .form {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .addInputWithConditional {
+    flex-direction: column;
+  }
+  .addInputWithConditionalCount {
+    width: 100%;
+  }
+  .addInputWithConditionalArbitrator {
+    width: 95%;
+  }
+  .dueDate {
+    margin: 0 !important;
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 575px) {
+  .groupButtonArbitrator {
+    flex-direction: column;
+
+    button {
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+  .rowMakerSection {
+    padding: .75rem !important;
+
+    &__mainInput {
+      &--icon {
+        display: none !important;
+      }
+    }
+  }
+
+  .takerAddressSection {
+    padding: .75rem !important;
+
+    &__sellerInput {
+      &--icon {
+        display: none !important;
+      }
+    }
+  }
+
+  .arbiterRowSection {
+    padding: .75rem !important;
+  }
+
+  .arbiterSection {
+    padding: 0 !important;
+
+    &__groupInput {
+      &--icon {
+        display: none !important;
+      }
+    }
+
+    &__groupBtn {
+      flex-direction: column;
+    }
+  }
+
+  .dealsAmount {
+    padding: .75rem !important;
+  }
+
+  .conditionRowSection {
+    padding: .75rem !important;
+  }
+
+  .container {
+    .conditionTime {
+      background-color: #292a2d;
+      border-radius: 15px;
+      margin-left: 0px;
+      margin-top: 15px;
+      width: 100%;
+    }
+  }
+  .condition {
+    flex-direction: column;
+  }
+  .buyersField {
+    width: 100%;
+  }
+  .dynamicBuyersInput {
+    gap: 0;
+    flex-direction: column;
+
+    & > .container input,
+    & input {
+      width: 100% !important;
+    }
+  }
+
+  .addInputWithConditionalArbitrator {
+    position: relative;
+  }
+
+  .arbiterSection__groupInput--icon {
+    position: absolute;
+    right: 1rem;
+  }
+
+  .arbiterSection__groupInput--inside {
+    flex-direction: column;
+
+    & > .container input,
+    & input {
+      width: 100% !important;
+    }
+
+    & > div {
+      flex-direction: column;
+    }
+
+    & > div:nth-child(2) {
+      gap: 0px !important;
+    }
+  }
+
+  .arbiterSection__groupInput--inside {
+    gap: 0px !important;
+  }
+
+  .dueDate {
+    margin: 0 !important;
+    width: 100% !important;
+  }
+
+  .totalSumBlockSecondary {
+    & > h4 {
+      font-size: 12px;
+    }
+  }
+
+  .totalSumBlock {
+    & > h2 {
+      font-size: 14px;
+    }
+
+    &__info {
+      & > p {
+        font-size: 12px;
+      }
+    }
+  }
+
+  .addInputWithConditionalArbitrator {
+    width: 100% !important;
+  }
+}

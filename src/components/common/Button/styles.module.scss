@@ -1,0 +1,44 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
+.button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 24px;
+  gap: 8px;
+  border: none;
+  border-radius: $maximumBorderRadiusButton;
+  cursor: pointer;
+  text-wrap: nowrap;
+
+  &:disabled {
+    background: $lightGrayColor;
+  }
+}
+
+.light {
+  background: $primaryTonal;
+  color: $mainTextColor;
+}
+
+.lilac {
+  background: $primaryCyan;
+  color: $darkColorText;
+}
+.dark {
+  color: #8f9099;
+}
+.darkCyan {
+  background-color: #1f1f23;
+  color: $primaryCyan;
+}
+.darkPink {
+  background-color: #1f1f23;
+  color: #ffb4ab;
+}
+.gray {
+  background: $primaryTonal;
+  color: $lightGrayColor;
+}

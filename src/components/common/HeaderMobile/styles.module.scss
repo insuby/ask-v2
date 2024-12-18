@@ -1,0 +1,86 @@
+@import "../../../styles/variables";
+
+.header {
+  background-color: #0d0e11;
+  min-height: 83px;
+  padding: 0 0.3rem;
+  align-items: center;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-between;
+
+  h2 {
+    font-weight: normal;
+  }
+}
+
+.buttons {
+  display: flex;
+}
+
+.button {
+  width: 51px;
+  height: 51px;
+  position: relative;
+  max-height: 51px;
+  border-radius: 100px;
+  background: $backgroundColorModal;
+  border: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+
+  &Rounded {
+    height: 51px;
+    width: 51px;
+    margin-left: 8px;
+    background: $primaryCyan;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.notificationButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  border-radius: 32px;
+  background: #292a2d;
+  border: none;
+  cursor: pointer;
+
+  .notificationCount {
+    position: absolute;
+    top: 10px;
+    right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffb4ab;
+    height: 16px;
+    width: 16px;
+    border-radius: 12px;
+
+    span {
+      text-align: center;
+      color: #690005;
+
+    }
+  }
+}
+
+.icon {
+  position: absolute;
+  top: 14px;
+  left: 26px;
+}
+
+@media (min-width: 575px) {
+  .header {
+    display: none;
+  }
+}

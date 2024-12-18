@@ -1,0 +1,27 @@
+@import '../../../styles/variables';
+
+.row {
+  cursor: pointer;
+
+  td {
+    position: relative;
+    overflow-wrap: break-word;
+    text-align: left;
+    color: $lightBlueColor;
+    font-weight: 400;
+
+    &:first-of-type {
+      //padding: 0 15px 0 0;
+    }
+
+    &:last-of-type {
+      //padding: 0 0 0 15px;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  :where(.row) tr td {
+    padding: 0;
+  }
+}
